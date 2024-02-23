@@ -1,9 +1,9 @@
 ## Docker Compose Project build using Flask and using Nginx as Loadbalancer
 - This is basic flask based web application  to demonstrate the Docker compose concept
-- So what is docker compose? so , Docker compose is tool ofr defining and running multi-container Docker applications. with compose we use a yaml file to configure our
+- So what is docker compose? so , Docker compose is tool for defining and running multi-container Docker applications. with compose we use a yaml file to configure our
   application services.
 - Compose is work on all envirenment production , staging development, testing as well as workflow also.
-- The key featur's of docker compose :
+- The key feature's of docker compose :
    1. Have Multiple isolated environment on a single host .
    2. Preserve volume data when container are created .
    3. Only recreate's the container that have changed .
@@ -19,7 +19,7 @@
 - We are using nginx web servers as loadbalancer for scaling of our application.
 - For this task we have setup nginx.conf file.
 - After compliting the setup follow below command.
-   ** docker-compose scale web=5 **
+   **docker-compose scale web=5**
 - Here web is name off a service and 5 number of containers to be scaled.
 - Here the Nginx act as proxy server to allow our application to scale.
   
