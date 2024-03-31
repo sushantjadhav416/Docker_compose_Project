@@ -13,15 +13,17 @@
 -  First , clone this repository to your system.
 -  I have coded the docker-compose file in .yaml format.
 -  So type **docker-compose Up** command to start application.
--  In this project we are using flask based Wed API , Nginx server and redis as a backend server.
+-  In this project we are using flask based Wed API , Nginx server and redis as a backend database.
 
 ### Use of Nginx server to enable scaling in docker compose
 - We are using nginx web servers as loadbalancer for scaling of our application.
 - For this task we have setup nginx.conf file.
 - After compliting the setup follow below command.
-   **docker-compose scale web=5**
+   ```
+   docker-compose scale web=5
+   ```
 - Here web is name off a service and 5 number of containers to be scaled.
-- Here the Nginx act as proxy server to allow our application to scale.
+- The Nginx act as proxy server to allow our application to scale.
   
   
 
